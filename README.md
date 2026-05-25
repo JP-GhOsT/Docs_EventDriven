@@ -191,7 +191,7 @@ Foi adicionada uma validação para pedidos com quantidade maior que 5.
 
 ### Print do teste
 
-> Inserir print aqui
+<img src="docs/imagens/print-log_att.png" width="700">
 
 ---
 
