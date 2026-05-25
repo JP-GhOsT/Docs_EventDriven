@@ -86,17 +86,14 @@ Connection: close
 ### Logs dos consumidores processando o mesmo pedido
 
 ```log
-[INSERIR LOGS AQUI]
-
-Exemplo:
-ConsumidorEstoque -> Pedido recebido ID 1
-ConsumidorPagamento -> Pedido recebido ID 1
-ConsumidorNotificacao -> Pedido recebido ID 1
+2026-05-25 19:40:47 INFO  b.e.e.estoque.ConsumidorEstoque - Estoque: reservando 2 unidade(s) do produto P001 para o pedido f5de0ded-9569-4b94-9e34-cf9914ffa6b0
+2026-05-25 19:40:47 INFO  b.e.e.n.ConsumidorNotificacao - Notificação: enviando confirmação do pedido f5de0ded-9569-4b94-9e34-cf9914ffa6b0 para o cliente C001
+2026-05-25 19:40:47 INFO  b.e.e.pagamento.ConsumidorPagamento - Pagamento: processando cobrança do pedido f5de0ded-9569-4b94-9e34-cf9914ffa6b0 para o cliente C001
 ```
 
 ### Print dos logs
 
-> Inserir print aqui
+<img src="docs/imagens/print-response_log.png" width="700">
 
 ---
 
