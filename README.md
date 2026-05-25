@@ -36,7 +36,7 @@
 
 ### Print da aplicação iniciada
 
-> Inserir print aqui
+<img src="docs/imagens/image.png" width="700">
 
 ---
 
