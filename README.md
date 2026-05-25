@@ -163,10 +163,6 @@ templateRabbit.convertAndSend(
 
 ## Regra implementada
 
-> Descrever a alteração realizada no consumidor.
-
-### Exemplo
-
 ```txt
 Foi adicionada uma validação para pedidos com quantidade maior que 5.
 ```
@@ -179,19 +175,18 @@ Foi adicionada uma validação para pedidos com quantidade maior que 5.
 
 ```json
 {
-  "cliente": "Maria",
-  "produto": "Monitor",
-  "quantidade": 10
+  "idCliente": "C001",
+  "idProduto": "P001",
+  "quantidade": 6
 }
 ```
 
 ### Resultado observado
 
 ```log
-[INSERIR LOG OU RESULTADO AQUI]
-
-Exemplo:
-ConsumidorEstoque -> Quantidade acima do permitido para aprovação automática
+2026-05-25 20:15:31 INFO  b.e.e.pagamento.ConsumidorPagamento - Pagamento: processando cobrança do pedido d684f363-4fd5-4b96-ace5-61cd51291e24 para o cliente C001
+2026-05-25 20:15:31 WARN  b.e.e.estoque.ConsumidorEstoque - Estoque: pedido d684f363-4fd5-4b96-ace5-61cd51291e24 recebido com quantidade acima de 5 unidades (6)
+2026-05-25 20:15:31 INFO  b.e.e.n.ConsumidorNotificacao - Notificação: enviando confirmação do pedido d684f363-4fd5-4b96-ace5-61cd51291e24 para o cliente C001
 ```
 
 ### Print do teste
