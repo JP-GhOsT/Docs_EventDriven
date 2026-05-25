@@ -113,8 +113,8 @@ Connection: close
 
 ### Evidência da interface RabbitMQ
 
-> Inserir print da interface RabbitMQ aqui
-
+<img src="docs/imagens/print-exchange.png" width="700">
+<img src="docs/imagens/print-queus.png" width="700">
 ---
 
 # Publicação do Evento
