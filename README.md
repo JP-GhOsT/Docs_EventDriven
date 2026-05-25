@@ -36,7 +36,7 @@
 
 ### Print da aplicação iniciada
 
-<img src="docs/imagens/image.png" width="700">
+<img src="docs/imagens/print-init.png" width="700">
 
 ---
 
@@ -75,7 +75,7 @@ Connection: close
 
 ### Print da resposta HTTP
 
-<img src="docs/imagens/image.png" width="700">
+<img src="docs/imagens/print-response.png" width="700">
 
 ---
 
