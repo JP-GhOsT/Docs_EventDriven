@@ -75,7 +75,7 @@ Connection: close
 
 ### Print da resposta HTTP
 
-> Inserir print aqui
+<img src="docs/imagens/image.png" width="700">
 
 ---
 
