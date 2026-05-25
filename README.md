@@ -114,6 +114,7 @@ Connection: close
 ### Evidência da interface RabbitMQ
 
 <img src="docs/imagens/print-exchange.png" width="700">
+
 <img src="docs/imagens/print-queus.png" width="700">
 ---
 
@@ -128,21 +129,24 @@ Connection: close
 ### Arquivo onde o evento é publicado
 
 ```txt
-[INSERIR NOME DO ARQUIVO]
-
-Exemplo:
-PedidoService.java
+ControladorPedido.java
 ```
 
 ### Método responsável pela publicação
 
 ```txt
-[INSERIR MÉTODO]
-
-Exemplo:
 criarPedido()
 ```
 
+### Linha responsável pela publicação
+
+```java
+templateRabbit.convertAndSend(
+    ConfiguracaoRabbitMQ.EXCHANGE_PEDIDOS,
+    "",
+    evento
+);
+```
 ---
 
 # Consumidores do Evento
